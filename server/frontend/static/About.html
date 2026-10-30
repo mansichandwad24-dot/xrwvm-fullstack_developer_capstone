@@ -1,9 +1,188 @@
+```html
 <!DOCTYPE html>
-<html>
-<head><title>About Us</title></head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About Us | Car Dealership</title>
+
+    <!-- Update this path if your CSS file is located elsewhere -->
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f6f9;
+            color: #333;
+        }
+
+        header {
+            background: #172554;
+            color: white;
+            text-align: center;
+            padding: 35px 20px;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 35px auto;
+            padding: 20px;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 35px;
+            line-height: 1.7;
+        }
+
+        .team {
+            display: grid;
+            grid-template-columns:
+                repeat(auto-fit, minmax(240px, 1fr));
+            gap: 25px;
+        }
+
+        .member {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        .member img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        .member h3 {
+            color: #172554;
+            margin-bottom: 8px;
+        }
+
+        .role {
+            color: #2563eb;
+            font-weight: bold;
+        }
+
+        .member a {
+            color: #1d4ed8;
+            text-decoration: none;
+            overflow-wrap: anywhere;
+        }
+
+        footer {
+            background: #172554;
+            color: white;
+            text-align: center;
+            padding: 18px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
 <body>
-    <h1>About Us - Car Dealership</h1>
-    <p>Team Members: Yuvraj & Partners</p>
-    <p>Email: support@cardealership.com</p>
+
+<header>
+    <h1>About Our Team</h1>
+    <p>Driving Excellence in Every Journey</p>
+</header>
+
+<main class="container">
+
+    <section class="intro">
+        <h2>Who We Are</h2>
+        <p>
+            We are a dedicated team working to make car buying
+            easier and more convenient. Our car dealership platform
+            helps customers explore vehicles and find cars that
+            suit their needs.
+        </p>
+    </section>
+
+    <section aria-labelledby="team-heading">
+        <h2 id="team-heading" style="text-align:center;">
+            Meet Our Team
+        </h2>
+
+        <div class="team">
+
+            <article class="member">
+                <img
+                    src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=300&q=80"
+                    alt="Team member and project lead">
+
+                <h3>Team Member 1</h3>
+                <p class="role">Project Lead</p>
+
+                <p>
+                    Coordinates project activities and oversees
+                    the development of the dealership platform.
+                </p>
+
+                <a href="mailto:member1@example.com">
+                    member1@example.com
+                </a>
+            </article>
+
+            <article class="member">
+                <img
+                    src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=300&q=80"
+                    alt="Team member and frontend developer">
+
+                <h3>Team Member 2</h3>
+                <p class="role">Frontend Developer</p>
+
+                <p>
+                    Develops the user interface and improves
+                    the customer browsing experience.
+                </p>
+
+                <a href="mailto:member2@example.com">
+                    member2@example.com
+                </a>
+            </article>
+
+            <article class="member">
+                <img
+                    src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=300&q=80"
+                    alt="Team member and backend developer">
+
+                <h3>Team Member 3</h3>
+                <p class="role">Backend Developer</p>
+
+                <p>
+                    Works on application logic, data management,
+                    and server-side functionality.
+                </p>
+
+                <a href="mailto:member3@example.com">
+                    member3@example.com
+                </a>
+            </article>
+
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Car Dealership Project. All rights reserved.</p>
+</footer>
+
 </body>
 </html>
+```
